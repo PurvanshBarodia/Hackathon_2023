@@ -1,0 +1,48 @@
+<%- include('partials/header') %>
+
+<%- include('partials/navbar') %>
+
+<div class="row">
+  <div class="col-lg-6">
+    <form action="/final" method="POST">
+
+      <div class="plan-input-ft">
+        <label for="preference_for_hotels" class="form-label">Stay Preferences :</label>
+        <div class="rate">
+          <input type="radio" id="star5" name="rate" value="5" />
+          <label for="star5" title="text">5 stars</label>
+          <input type="radio" id="star4" name="rate" value="4" />
+          <label for="star4" title="text">4 stars</label>
+          <input type="radio" id="star3" name="rate" value="3" />
+          <label for="star3" title="text">3 stars</label>
+          <input type="radio" id="star2" name="rate" value="2" />
+          <label for="star2" title="text">2 stars</label>
+          <input type="radio" id="star1" name="rate" value="1" />
+          <label for="star1" title="text">1 star</label>
+        </div>
+      </div>
+
+
+
+      <div class="plan-input mb-4">
+        <label for="food_prefernces" class="form-label">Food Preferences:</label>
+        <select class="form-select" id="food_prefernces" aria-label="Default select example">
+          <option selected>Select</option>
+          <option value="1">North Indian</option>
+          <option value="2">South Indian</option>
+          <option value="3">Continental</option>
+        </select>
+      </div>
+      <div style="width:200px; margin:auto; margin-bottom:30px;">
+        <button class="w-100 btn btn-dark" type="submit">Plan</button>
+      </div>
+
+    </form>
+  </div>
+
+  <div class="col-lg-6">
+
+  </div>
+</div>
+
+<%- include('partials/footer') %>

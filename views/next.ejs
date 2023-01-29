@@ -1,0 +1,74 @@
+<%- include('partials/header') %>
+
+<%- include('partials/navbar') %>
+
+<div style="padding:30px;" class="row">
+  <div style="  padding:3rem; border: 2px solid black;" class="col-lg-6">
+    <form action="/next" method="POST">
+
+      <div class="plan-input-ft ">
+        <label for="from" class="form-label plan-ft">From:</label>
+        <input name="from" type="date" class="form-control" id="from">
+      </div>
+      <div class="plan-input-ft">
+        <label for="to" class="form-label">To:</label>
+        <input name="to" type="date" class="form-control" id="to">
+      </div>
+
+
+
+      <div class="plan-input mb-4">
+        <label for="cityToVisit" class="form-label">Destination:</label>
+        <select name = "cityToVisit" class="form-select" id="food_prefernces" aria-label="Default select example">
+          <option selected>Select</option>
+          <option value="Ahmedabad">Ahmedabad</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Mumbai">Mumbai</option>
+        </select>
+      </div>
+
+      <div class="plan-input mb-4">
+        <label for="budget" class="form-label">Budget:</label>
+        <input name="budget" type="number" class="form-control" id="budget">
+      </div>
+
+      <div class="plan-input mb-4">
+        <label for="noOfMembers" class="form-label">Number of members:</label>
+        <input name="noOfMembers" type="number" class="form-control" id="noOfMembers">
+      </div>
+      <div style="width:200px; margin:auto; margin-bottom:30px;">
+        <button class="w-100 btn btn-dark" type="submit">Next</button>
+      </div>
+
+    </form>
+  </div>
+
+  <div style=" margin-left:10px; border: 2px solid black; width:680px;" class="col-lg-6">
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.css" type="text/css">
+    <div id="map"></div>
+
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoicHJhdGhhbTEyIiwiYSI6ImNsZGc2bnZndDBlMjIzcG8wd3hsaXcwZnMifQ.65U7doCPzYQkrzn1e3DJ-w';
+      const map = new mapboxgl.Map({
+        container: 'map',
+        // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+        style: 'mapbox://styles/mapbox/streets-v12',
+        center: [-79.4512, 43.6568],
+        zoom: 13
+      });
+
+      map.addControl(
+        new MapboxDirections({
+          accessToken: mapboxgl.accessToken
+        }),
+        'top-left'
+      );
+    </script>
+
+
+  </div>
+</div>
+
+<%- include('partials/footer') %>

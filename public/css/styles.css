@@ -1,0 +1,616 @@
+body {
+  background-color: #E8ECEF;
+  align-items: center;
+
+}
+
+#navigation-bar{
+  padding: 1% 5%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+#top-body {
+  padding: 1% 5%;
+  margin: 10px;
+}
+
+#bottom-body {
+  padding: 5% 5%;
+  margin:9% 0 0 0;
+  background: url('bg-curve-desktop.svg') no-repeat;
+  background-size: cover;
+
+}
+#footer li{
+  list-style: none;
+  padding: 1%;
+}
+form input{
+  width: 60%;
+  margin-right:10px;
+  height: 30px;
+  margin-top: 2px;
+  padding: 2%;
+}
+
+
+.bb-box{
+  background-color: white;
+  padding: 3%;
+  border-radius: 3%;
+
+}
+.atag{
+  color: green;
+  text-decoration: none;
+
+}
+
+.testimonial-img{
+  border-radius: 50%;
+  width: 20%;
+}
+.content{
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+}
+.bold{
+  font-weight:700;
+  font-size: 1.8rem;
+}
+
+.body-img{
+  width: 80%;
+}
+
+
+#above-footer{
+  background-color: hsl(238, 22%, 44%);
+  padding: 4% 5%;
+  color: white;
+}
+.contact-form{
+  padding: 4% 0 0 10%;
+}
+.abv-fot-btn{
+  margin-top: 2%;
+}
+
+
+#footer{
+  background-color: hsl(243,87%,12%);
+  color: white;
+  padding: 5% 5%;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+
+}
+
+.footer-logo{
+  margin: 3%;
+}
+
+i{
+  margin-left: 5%;
+  color: white;
+}
+
+.centered {
+  padding-top: 200px;
+  text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+.plan-input{
+  width: 500px;
+  margin: auto;
+}
+
+.plan-input-ft{
+  display: inline-block;
+  margin: auto;
+  margin-right: 10px;
+  margin-bottom: 35px;
+  width: 250px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 47px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+list-timeline {
+  margin: 0;
+  padding: 5px 0;
+  position: relative
+}
+
+.list-timeline:before {
+  width: 1px;
+  background: #ccc;
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  content: ''
+}
+
+.list-timeline .list-timeline-item {
+  margin: 0;
+  padding: 0;
+  padding-left: 24px !important;
+  position: relative
+}
+
+.list-timeline .list-timeline-item:before {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border: 2px solid #ccc;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  content: '';
+  border-radius: 100%;
+  -webkit-transition: all .3 ease-in-out;
+  transition: all .3 ease-in-out
+}
+
+.list-timeline .list-timeline-item[data-toggle=collapse] {
+  cursor: pointer
+}
+
+.list-timeline .list-timeline-item.active:before,
+.list-timeline .list-timeline-item.show:before {
+  background: #ccc
+}
+
+.list-timeline.list-timeline-light .list-timeline-item.active:before,
+.list-timeline.list-timeline-light .list-timeline-item.show:before,
+.list-timeline.list-timeline-light:before {
+  background: #f8f9fa
+}
+
+.list-timeline .list-timeline-item.list-timeline-item-marker-middle:before {
+  top: 50%;
+  margin-top: -6px
+}
+
+.list-timeline.list-timeline-light .list-timeline-item:before {
+  border-color: #f8f9fa
+}
+
+.list-timeline.list-timeline-grey .list-timeline-item.active:before,
+.list-timeline.list-timeline-grey .list-timeline-item.show:before,
+.list-timeline.list-timeline-grey:before {
+  background: #e9ecef
+}
+
+.list-timeline.list-timeline-grey .list-timeline-item:before {
+  border-color: #e9ecef
+}
+
+.list-timeline.list-timeline-grey-dark .list-timeline-item.active:before,
+.list-timeline.list-timeline-grey-dark .list-timeline-item.show:before,
+.list-timeline.list-timeline-grey-dark:before {
+  background: #495057
+}
+
+.list-timeline.list-timeline-grey-dark .list-timeline-item:before {
+  border-color: #495057
+}
+
+.list-timeline.list-timeline-primary .list-timeline-item.active:before,
+.list-timeline.list-timeline-primary .list-timeline-item.show:before,
+.list-timeline.list-timeline-primary:before {
+  background: #55A79A
+}
+
+.list-timeline.list-timeline-primary .list-timeline-item:before {
+  border-color: #55A79A
+}
+
+.list-timeline.list-timeline-primary-dark .list-timeline-item.active:before,
+.list-timeline.list-timeline-primary-dark .list-timeline-item.show:before,
+.list-timeline.list-timeline-primary-dark:before {
+  background: #33635c
+}
+
+.list-timeline.list-timeline-primary-dark .list-timeline-item:before {
+  border-color: #33635c
+}
+
+.list-timeline.list-timeline-primary-faded .list-timeline-item.active:before,
+.list-timeline.list-timeline-primary-faded .list-timeline-item.show:before,
+.list-timeline.list-timeline-primary-faded:before {
+  background: rgba(85, 167, 154, .3)
+}
+
+.list-timeline.list-timeline-primary-faded .list-timeline-item:before {
+  border-color: rgba(85, 167, 154, .3)
+}
+
+.list-timeline.list-timeline-info .list-timeline-item.active:before,
+.list-timeline.list-timeline-info .list-timeline-item.show:before,
+.list-timeline.list-timeline-info:before {
+  background: #17a2b8
+}
+
+.list-timeline.list-timeline-info .list-timeline-item:before {
+  border-color: #17a2b8
+}
+
+.list-timeline.list-timeline-success .list-timeline-item.active:before,
+.list-timeline.list-timeline-success .list-timeline-item.show:before,
+.list-timeline.list-timeline-success:before {
+  background: #28a745
+}
+
+.list-timeline.list-timeline-success .list-timeline-item:before {
+  border-color: #28a745
+}
+
+.list-timeline.list-timeline-warning .list-timeline-item.active:before,
+.list-timeline.list-timeline-warning .list-timeline-item.show:before,
+.list-timeline.list-timeline-warning:before {
+  background: #ffc107
+}
+
+.list-timeline.list-timeline-warning .list-timeline-item:before {
+  border-color: #ffc107
+}
+
+.list-timeline.list-timeline-danger .list-timeline-item.active:before,
+.list-timeline.list-timeline-danger .list-timeline-item.show:before,
+.list-timeline.list-timeline-danger:before {
+  background: #dc3545
+}
+
+.list-timeline.list-timeline-danger .list-timeline-item:before {
+  border-color: #dc3545
+}
+
+.list-timeline.list-timeline-dark .list-timeline-item.active:before,
+.list-timeline.list-timeline-dark .list-timeline-item.show:before,
+.list-timeline.list-timeline-dark:before {
+  background: #343a40
+}
+
+.list-timeline.list-timeline-dark .list-timeline-item:before {
+  border-color: #343a40
+}
+
+.list-timeline.list-timeline-secondary .list-timeline-item.active:before,
+.list-timeline.list-timeline-secondary .list-timeline-item.show:before,
+.list-timeline.list-timeline-secondary:before {
+  background: #6c757d
+}
+
+.list-timeline.list-timeline-secondary .list-timeline-item:before {
+  border-color: #6c757d
+}
+
+.list-timeline.list-timeline-black .list-timeline-item.active:before,
+.list-timeline.list-timeline-black .list-timeline-item.show:before,
+.list-timeline.list-timeline-black:before {
+  background: #000
+}
+
+.list-timeline.list-timeline-black .list-timeline-item:before {
+  border-color: #000
+}
+
+.list-timeline.list-timeline-white .list-timeline-item.active:before,
+.list-timeline.list-timeline-white .list-timeline-item.show:before,
+.list-timeline.list-timeline-white:before {
+  background: #fff
+}
+
+.list-timeline.list-timeline-white .list-timeline-item:before {
+  border-color: #fff
+}
+
+.list-timeline.list-timeline-green .list-timeline-item.active:before,
+.list-timeline.list-timeline-green .list-timeline-item.show:before,
+.list-timeline.list-timeline-green:before {
+  background: #55A79A
+}
+
+.list-timeline.list-timeline-green .list-timeline-item:before {
+  border-color: #55A79A
+}
+
+.list-timeline.list-timeline-red .list-timeline-item.active:before,
+.list-timeline.list-timeline-red .list-timeline-item.show:before,
+.list-timeline.list-timeline-red:before {
+  background: #BE3E1D
+}
+
+.list-timeline.list-timeline-red .list-timeline-item:before {
+  border-color: #BE3E1D
+}
+
+.list-timeline.list-timeline-blue .list-timeline-item.active:before,
+.list-timeline.list-timeline-blue .list-timeline-item.show:before,
+.list-timeline.list-timeline-blue:before {
+  background: #00ADBB
+}
+
+.list-timeline.list-timeline-blue .list-timeline-item:before {
+  border-color: #00ADBB
+}
+
+.list-timeline.list-timeline-purple .list-timeline-item.active:before,
+.list-timeline.list-timeline-purple .list-timeline-item.show:before,
+.list-timeline.list-timeline-purple:before {
+  background: #b771b0
+}
+
+.list-timeline.list-timeline-purple .list-timeline-item:before {
+  border-color: #b771b0
+}
+
+.list-timeline.list-timeline-pink .list-timeline-item.active:before,
+.list-timeline.list-timeline-pink .list-timeline-item.show:before,
+.list-timeline.list-timeline-pink:before {
+  background: #CC164D
+}
+
+.list-timeline.list-timeline-pink .list-timeline-item:before {
+  border-color: #CC164D
+}
+
+.list-timeline.list-timeline-orange .list-timeline-item.active:before,
+.list-timeline.list-timeline-orange .list-timeline-item.show:before,
+.list-timeline.list-timeline-orange:before {
+  background: #e67e22
+}
+
+.list-timeline.list-timeline-orange .list-timeline-item:before {
+  border-color: #e67e22
+}
+
+.list-timeline.list-timeline-lime .list-timeline-item.active:before,
+.list-timeline.list-timeline-lime .list-timeline-item.show:before,
+.list-timeline.list-timeline-lime:before {
+  background: #b1dc44
+}
+
+.list-timeline.list-timeline-lime .list-timeline-item:before {
+  border-color: #b1dc44
+}
+
+.list-timeline.list-timeline-blue-dark .list-timeline-item.active:before,
+.list-timeline.list-timeline-blue-dark .list-timeline-item.show:before,
+.list-timeline.list-timeline-blue-dark:before {
+  background: #34495e
+}
+
+.list-timeline.list-timeline-blue-dark .list-timeline-item:before {
+  border-color: #34495e
+}
+
+.list-timeline.list-timeline-red-dark .list-timeline-item.active:before,
+.list-timeline.list-timeline-red-dark .list-timeline-item.show:before,
+.list-timeline.list-timeline-red-dark:before {
+  background: #a10f2b
+}
+
+.list-timeline.list-timeline-red-dark .list-timeline-item:before {
+  border-color: #a10f2b
+}
+
+.list-timeline.list-timeline-brown .list-timeline-item.active:before,
+.list-timeline.list-timeline-brown .list-timeline-item.show:before,
+.list-timeline.list-timeline-brown:before {
+  background: #91633c
+}
+
+.list-timeline.list-timeline-brown .list-timeline-item:before {
+  border-color: #91633c
+}
+
+.list-timeline.list-timeline-cyan-dark .list-timeline-item.active:before,
+.list-timeline.list-timeline-cyan-dark .list-timeline-item.show:before,
+.list-timeline.list-timeline-cyan-dark:before {
+  background: #008b8b
+}
+
+.list-timeline.list-timeline-cyan-dark .list-timeline-item:before {
+  border-color: #008b8b
+}
+
+.list-timeline.list-timeline-yellow .list-timeline-item.active:before,
+.list-timeline.list-timeline-yellow .list-timeline-item.show:before,
+.list-timeline.list-timeline-yellow:before {
+  background: #D4AC0D
+}
+
+.list-timeline.list-timeline-yellow .list-timeline-item:before {
+  border-color: #D4AC0D
+}
+
+.list-timeline.list-timeline-slate .list-timeline-item.active:before,
+.list-timeline.list-timeline-slate .list-timeline-item.show:before,
+.list-timeline.list-timeline-slate:before {
+  background: #5D6D7E
+}
+
+.list-timeline.list-timeline-slate .list-timeline-item:before {
+  border-color: #5D6D7E
+}
+
+.list-timeline.list-timeline-olive .list-timeline-item.active:before,
+.list-timeline.list-timeline-olive .list-timeline-item.show:before,
+.list-timeline.list-timeline-olive:before {
+  background: olive
+}
+
+.list-timeline.list-timeline-olive .list-timeline-item:before {
+  border-color: olive
+}
+
+.list-timeline.list-timeline-teal .list-timeline-item.active:before,
+.list-timeline.list-timeline-teal .list-timeline-item.show:before,
+.list-timeline.list-timeline-teal:before {
+  background: teal
+}
+
+.list-timeline.list-timeline-teal .list-timeline-item:before {
+  border-color: teal
+}
+
+.list-timeline.list-timeline-green-bright .list-timeline-item.active:before,
+.list-timeline.list-timeline-green-bright .list-timeline-item.show:before,
+.list-timeline.list-timeline-green-bright:before {
+  background: #2ECC71
+}
+
+.list-timeline.list-timeline-green-bright .list-timeline-item:before {
+  border-color: #2ECC71
+}
+.mb-3 {
+    margin: 20px auto;
+}
+
+#typewriter {
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 70px;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: auto;
+  height: 500px;
+  padding: 150px;
+  word-wrap: break-word;
+  animation-iteration-count: 10;
+
+}
+
+@keyframes animate-letters {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
